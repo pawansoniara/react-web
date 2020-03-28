@@ -1,0 +1,23 @@
+.loader {
+  pointer-events: none;
+  position: absolute;
+  z-index: 999;
+  top: calc(100% /2);
+  left: calc(100% /2);
+  color: #FFF;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .loader {
+    animation: spinTransform infinite 2s linear;
+  }
+}
+
+@keyframes spinTransform {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
